@@ -1,0 +1,157 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	h1{
+		font-size:3.3em;
+	}
+	h2{
+		font-size: 1.5em;
+	}
+	p{
+		font-size: 15px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	h1{
+		font-size:2.7em;
+	}
+	h2{
+		font-size: 1.2em;
+	}
+	h3{
+		font-size: 1.2em;
+	}
+	.s_products .product-item h3{
+		font-size: .95em	
+	}
+	p{
+		font-size: 12px;
+	}
+	
+	.content li{
+		font-size: 12px;
+	}
+
+	.top_devider .top_descr{
+		display: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	h1{
+		font-size:2.5em;
+	}
+	h2{
+		font-size: 1.5em;
+	}
+	p{
+		font-size: 13px;
+	}
+	.contacts_head{
+		display: none;
+	}
+
+	.s_why .icon {
+    float: left;
+    font-size: 115px;
+	}
+	
+	.main_logo{
+		display: none;
+	}
+
+	header .main_menu .logo .mini_logo {
+    display: block;
+	}
+
+	header .slider-img .slide-text p {
+		font-size: 14px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	h1{
+		font-size:1.5em;
+	}
+	h2{
+		font-size: 1.3em;
+	}
+	p{
+		font-size: 13px;
+	}
+
+
+	header .slider-img .slide-text p {
+		font-size: 12px;
+	}
+
+	header .main_menu .menu li {
+    font-size: 17px;
+    line-height: 22px;
+    display: block;
+  }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	h1{
+		font-size:1.2em;
+	}
+	h2{
+		font-size: 1.3em;
+	}
+	p{
+		font-size: 12px;
+	}
+	
+	header .slider-img .slide-text{
+		left: 15%;
+		right: 15%;
+		bottom: 20%;
+	}
+	header .slider-img .slide-text p {
+		font-size: 10px;
+	}
+	header .main_menu .menu li {
+    font-size: 17px;
+    line-height: 22px;
+    display: block;
+  }
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.article:nth-child(10){
+		display: none;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
