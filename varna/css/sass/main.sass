@@ -1,0 +1,306 @@
+@import "bourbon/bourbon"
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900')
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+$main_color: #21C2F8
+$theme_color: #F1E7CE
+$light_color: #e0e0e0
+$dark_color: #222533
+
+body
+	font-family: "Source Sans Pro", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+	a
+		color: $main_color
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+
+.centered
+	text-align: center
+
+ul,li
+	list-style-type: none
+	margin: 0
+	padding: 0
+h1, h2, h3
+	margin: 20px 0
+h1
+	font-size: 3.5em
+	padding: 0px 15px
+h2
+	font-size: 1.6em
+	text-transform: uppercase
+h3
+	font-size: 1.8em
+p
+	font-size: 18px
+
+section
+	padding: 30px 0px
+
+header
+	padding-bottom: 20px
+	.top_bar
+		.logo_wrap
+			color: #fff
+			background-color: $main_color
+			float: left 
+			padding: 40px 15px 10px 10px
+			+kerning(3)
+			h1
+				line-height: 40px
+				text-transform: uppercase
+				margin: 0
+				padding: 0
+			span
+				display: block
+				font-size: 24px
+				font-weight: bold
+		.contacts_wrap
+			padding-top: 20px
+			text-align: right
+			p
+				text-align: right
+				margin: 0
+			h1
+				text-transform: uppercase
+				font-weight: bold
+				font-size: 22px
+				padding: 0
+				margin: 0
+			a
+				line-height: 43px
+				font-size: 43px
+				font-weight: bold
+				i
+					color: #C9C9C9
+					+transition(0.7s)
+					margin: 0 5px
+			a:hover
+				i
+					color: $main_color
+					transform: scale(1.1)
+	.bottom_bar
+		margin-top: 20px
+		border: 2px solid $light_color
+		li
+			padding: 8px 4px 8px 2px
+			display: inline-block
+			font-size: 25px
+			font-weight: bold
+			text-transform: uppercase
+			border-right: 2px solid $light_color
+			a
+				+transition(.45s)
+				color: $dark_color
+				padding: 8px 8px 8px
+			.active
+				color: #fff
+				background-color: $dark_color
+		li:nth-child(1)
+			padding-left: 4px
+		li:last-child
+			border-right: none
+		li:hover		
+			a
+				color: #fff
+				background-color: $dark_color
+		.dropdown_menu
+			z-index: 100
+			opacity: 0
+			-webkit-transition: opacity 1s, visibility 0s linear 1s
+			-moz-transition: opacity 1s, visibility 0s linear 1s
+			-o-transition: opacity 1s, visibility 0s linear 1s
+			transition: opacity 1s, visibility 0s linear 1s
+			visibility: hidden
+			display: block
+			position: absolute
+			background-color: #fff
+			margin-top: 15px
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.5)
+			li
+				+transition(0.45s)
+				display: block
+				border: none
+				a
+					font-size: 15px
+					background-color: #fff
+					color: #000	
+			li:hover
+				background-color: #F3F2F2
+				a
+					color: $main_color
+					background-color: #F3F2F2
+		.down_link:hover
+			.dropdown_menu
+				z-index: 9999
+				+transition(0.3s)
+				display: block
+				visibility: visible
+				opacity: 1
+		.fixed
+			+transition(1s)
+			position: fixed
+			top: 0
+			background-color: rgba(255,255,255,0.9)
+			box-shadow: 0 1px 2px #bbb
+			z-index: 999
+				
+.img-wrap
+	display: block
+	width: 100%
+	img
+		width: 100%
+
+.section_1
+	.section_item
+		display: inline-block
+		margin-top: 20px
+		margin-bottom: 20px
+		+transition(0.3s)
+		position: relative
+		img
+			width: 100%
+		.item-wrap
+			text-align: left
+			position: absolute
+			bottom: 0%
+			padding: 15px 20px
+			width: 100%
+			h2,p
+				margin: 0
+			p
+				float: left
+				width: 90%
+			i
+				float: right
+				font-size: 38px
+				margin-top: 45px
+		.dark_bg
+			background-color: rgba(34,37,51,0.8)
+			color: #fff
+			i:hover
+				color: #fff
+		.light_bg
+			background: rgba(255,255,255,0.8)
+			color: $dark_color
+			i:hover
+				color: $dark_color
+		.blue_bg
+			background: rgba(33,194,248,0.8)
+			color: #fff
+			i
+				color: #fff
+			i:hover
+				color: $dark_color
+	.section_item:hover
+		box-shadow: 8px 8px 10px rgba(0,0,0,0.5)
+
+.s_about
+	background-color: #F2F2F2	
+	h1
+		color: $main_color
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		font-weight: normal	
+		
+
+.s_services
+	color: $dark_color
+	h1
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		font-weight: normal
+	img
+		width: 100%
+	.list
+		margin-top: -10px
+		li
+			+transition(0.3s)
+			background-color: $main_color
+			margin: 10px 5px
+			padding: 21px 25px
+			color: #fff
+			font-weight: bold
+			a
+				color: #fff
+				font-size: 24px
+				margin: 0
+				i
+					font-size: 38px
+					float: right
+			a:hover
+				color: $main_color
+		li:hover
+			background-color: $dark_color
+
+.s_contacts
+	padding-top: 0px
+	h1
+		font-weight: normal
+		text-transform: uppercase
+		margin: 0
+		padding: 0
+		padding-bottom: 20px
+		span
+			font-weight: bold
+	i
+		font-size: 32px
+		padding-right: 10px
+	li
+		padding: 15px 0
+		font-size: 16px	
+.s_info
+	padding-top: 0
+	h1
+		font-weight: normal
+		text-transform: uppercase
+		margin: 0
+		padding: 0 5px
+		span
+			font-weight: bold
+	ul
+		padding-left: 40px
+		li
+			list-style-type: disc
+			font-size: 16px
+	p,h2,h3
+		padding: 0 5px
+footer
+	background-color: $dark_color
+	color: #fff
+	height: 40px
+	line-height: 40px
+
+form
+	z-index: 99999
+	position: relative
+	margin: auto
+	width: 320px
+	background-color: $light_color
+	padding: 25px 30px 20px
+	border: 2px solid $main_color
+	border-radius: 20px
+	li
+		list-style-type: disc
+		font-size: 16px
+		span
+			color: $main_color
+			font-weight: bold
