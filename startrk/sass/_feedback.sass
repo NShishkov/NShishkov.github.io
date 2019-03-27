@@ -1,0 +1,41 @@
+.feedback
+	background-color: #c4cde6
+	display: flex
+	.map, .feedback__form
+		width: 49%
+		display: inline-block
+	.feedback__form
+		vertical-align: top
+		padding-left: 130px
+		padding-top: 90px
+	.form
+		max-width: 440px
+		&__title
+			color: #ffffff
+			font-size: 44px
+			line-height: 44px
+			font-weight: 700
+			letter-spacing: 3.12px
+			margin-bottom: 44px
+		&__input, &__textarea
+			height: 60px
+			border-radius: 5px
+			border: 2px solid #aefffa
+			margin-bottom: 20px
+			padding-left: 20px
+			&::placeholder
+				color: #778097
+		&__input:focus, &__textarea:focus
+			box-shadow: 0 0 10px rgba(0,0,0,0.5)
+		&__textarea
+			padding-top: 15px
+			width: 440px
+			height: 140px
+		.input
+			&__name
+				width: 170px
+				margin-right: 25px
+			&__phone
+				width: 240px
+			&__email
+				width: 440px

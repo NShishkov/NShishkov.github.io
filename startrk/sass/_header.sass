@@ -1,0 +1,87 @@
+.header
+	height: 84px
+	transition: top 3s	
+	line-height: 84px
+	background-color: #759aff
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+	.logo
+		color: #fff
+		line-height: 20px
+		&__title
+			margin: 0
+			padding: 0
+			font-size: 32px
+			text-transform: uppercase
+			font-weight: 700
+			letter-spacing: 2px
+		&__subtitle
+			margin: 0
+			padding: 0
+			font-size: 12px
+			letter-spacing: 0.71px
+	.menu
+		float: right
+		color: #fff
+		height: 100%
+		ul
+			margin: 0
+			li
+				display: inline-block
+				list-style-type: none
+				font-size: 18px
+				font-weight: 600
+				margin-right: 30px
+			a
+				text-decoration: none
+				color: #fff
+				padding-bottom: 6px
+				transition: 0.2s
+				&:hover
+					transition: 0.2s
+					border-bottom: 3px solid rgba(#ffffff, 0.35)
+	.phone	
+		line-height: 20px
+		a
+			text-decoration: none
+			color: #fff			
+			font-size: 17px
+			font-weight: 600
+
+.main
+	position: relative
+	text-align: center
+	color: #fff
+	background-image: linear-gradient(180deg, #759aff 0%, #ffffff 100%)
+	&-text
+		margin: auto
+		max-width: 600px
+	&__title
+		font-size: 53px
+		font-weight: 700
+		line-height: 100px
+		margin-bottom: 40px
+	&__subtitle
+		font-size: 24px
+		font-weight: 300
+		margin-bottom: 65px
+	.arrow
+		position: absolute
+		bottom: 5%
+		left: 50%
+		margin-left: -25px
+		animation-duration: 3s
+	  animation-delay: 2s
+	  animation-iteration-count: infinite
+	.container
+		height: 80%
+		display: flex
+		justify-content: center
+		align-items: center
+
+.header.fixed
+	transition: 1s
+	width: 100%
+	position: fixed
+	z-index: 20
+	top: 0
+	background-color: rgba(#759aff, 0.7)
