@@ -1,0 +1,227 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+@media (max-width: 1450px) 
+	.gallery-navs__prev, .gallery-navs__next
+		display: none !important
+
+@media (max-width: 1340px) 
+	.ropes
+		.slick-slide
+			width: 220px
+			margin: 0 7px
+
+// ≥1340px
++media-breakpoint-down(lg)
+	.header
+		&-info, &-menu
+			display: none
+		&-menu_mobile
+			display: block
+		&-menu__wrap_mobile
+			li:nth-child(8)
+				margin-bottom: 15px
+		&-info	
+			&__link
+				line-height: 50px
+				height: 50px
+				display: block
+			&__cart_mobile
+				margin: 20px 0
+				background-color: #fff
+				display: inline-block
+				span
+					background-color: $green-main
+					color: #fff
+			&__phone_mobile
+				display: inline-block
+
+	.product
+		&-options
+			&__btn
+				margin-left: 0
+				margin-top: 20px
+
+	.gallery
+		&-navs
+			display: none
+
+	.about
+		&-tabs
+			display: flex
+			li
+				width: auto
+				flex-basis: 33%
+		&-block
+			&__text
+				width: 100%
+			&__table
+				width: 100%
+
+// ≥992px
++media-breakpoint-down(md)
+	
+	.ropes
+		&-block
+			margin: auto
+			margin-bottom: 20px
+		.slick-slide
+			width: 350px
+			margin: 0 7px
+	.footer
+		padding-top: 40px
+		&-wrap
+			display: none
+			&_bottom
+				margin: 0
+		&__logo
+			display: block
+			margin: auto
+			width: 142px
+		&__copy
+			margin-top: 19px
+			width: 100%
+			text-align: center
+		&__phone
+			display: none
+// ≥768px
++media-breakpoint-down(sm)
+	.product
+		padding-bottom: 50px
+		margin-top: 10px
+		&-info
+			&__name
+				display: none
+				&_mobile
+					display: block
+		&-options
+			&__count
+				margin-top: 20px
+			&__price, &__btn
+				display: block
+				margin-top: 20px
+				margin-left: 0		
+
+	.about
+		padding-top: 20px
+
+	.ropes
+		.slick-slide
+			width: 250px
+			margin: 0 7px
+	.feedback
+		padding-bottom: 40px
+		&__title
+			font-size: 25px
+			line-height: 30px
+		&__subtitle
+			margin-top: 15px
+			margin-bottom: 35px
+			font-size: 15px
+		&-form
+			width: 100%
+			// text-align: center
+			&__input
+				margin: auto 
+				margin-bottom: 30px
+				display: block
+				width: 265px 
+				padding-bottom: 5px
+				&:nth-child(1)
+					margin: auto
+					margin-bottom: 30px
+				&:nth-child(3)
+					width: 265px
+			&__btn
+				display: block
+				margin: auto
+				margin-top: 30px
+			&__policy
+				display: block
+				width: 95%
+				margin: auto	
+// ≥576px
++media-breakpoint-down(xs)
+	.header
+		&__logo
+			display: none
+			&_mobile
+				margin-left: 5px
+				margin-right: 10px
+				display: inline-block
+		&-menu
+			&__wrap_mobile
+				width: 100%
+			&__links_mobile
+				float: right
+				display: inline-block
+				.header-info__phone_mobile
+					margin-left: 8px
+				.menu-btn
+					margin-left: 8px
+
+
+	.product
+		&-options-block
+			margin-bottom: 25px
+			&:nth-child(1)
+				margin-bottom: 45px
+			&__shape, &__lenght
+				display: flex
+				justify-content: space-between
+				li
+					margin: 0
+			&__palette
+				width: 210px
+				height: auto
+				left: 80px
+
+
+	h2
+		font-size: 25px
+
+	.about
+		padding-top: 25px
+		padding-bottom: 30px
+	.about-tabs li a
+		font-size: 15px
+		line-height: 50px
+
+	.about-block__row td:nth-child(1)
+		padding-left: 10px
+	.about-block__row td:nth-child(2)
+		padding-right: 10px
+
+	.gallery
+		padding-bottom: 40px
+		&__title
+			margin-bottom: 0
+		&-container__img
+			padding: 0 5px
+		
+		.slick-slide
+			transition: .3s
+			opacity: .7
+			&.slick-center
+				opacity: 1
+
+	.ropes
+		.slick-slide
+			width: 290px
+	
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

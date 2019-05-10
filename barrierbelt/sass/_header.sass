@@ -1,0 +1,148 @@
+.header
+	color: $dark-grey
+	font-size: 13px
+	&-contacts
+		margin-left: 133px
+	&-info
+		height: 60px
+		&__name
+			margin-left: 30px
+			color: $dark-grey
+			font-weight: 400
+			line-height: 60px
+		&__phone
+			display: inline-block
+			margin-left: 34px
+			color: #999999
+			line-height: 60px
+			img
+				margin-right: 6px
+			a
+				padding-right: 15px
+		&__link
+			vertical-align: top
+			display: inline-block
+			color: $dark-grey
+			font-weight: 400
+			height: 60px
+			padding-right: 36px
+			line-height: 60px
+			transition: .25s
+			&:hover
+				text-decoration: none
+				color: $light-grey
+			&:nth-child(2)
+				&::after
+					display: inline-block
+					position: absolute
+					top: 20px
+					margin-left: 39px
+					content: ''
+					width: 1px
+					height: 20px
+					line-height: 60px
+					background-color: $light-grey-line
+		&__cart
+			display: block
+			margin: auto
+			margin-top: 10px
+			position: relative
+			width: 40px
+			height: 40px
+			background-color: $green-main
+			span
+				position: absolute
+				background-color: #fff
+				border-radius: 50%
+				height: 13px
+				width: 13px
+				color: $dark-grey
+				font-size: 9px
+				font-weight: 400
+				left: 20px
+				top: 8px
+				text-align: center
+			img
+				margin: 11px 0
+				margin-left: 8px
+				margin-right: 12px
+
+	&__logo
+		margin: 20px
+		margin-left: 26px
+		&_mobile
+			display: none
+
+	&-menu
+		height: 80px
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05)
+		background-color: #ffffff
+		ul,li
+			list-style-type: none
+		li
+			display: inline-block
+			float: left
+			margin: 0
+			padding: 0
+		&__wrap
+			padding: 0
+			height: 80px
+			float: left
+			width: 100%
+			&_mobile
+				padding-right: 20px
+				text-align: left
+				background-color: #fff
+				width: 330px
+				position: absolute
+				z-index: 3
+				top: 0
+				right: 0
+				ul, li
+					padding: 0
+					margin: 0
+				ul
+					display: none
+					padding-left: 36px
+				li
+					float: none
+					display: block
+					list-style-type: none
+		&__links_mobile
+			text-align: right
+		&__link
+			float: left
+			border: none
+			padding: 0px 23px
+			height: 80px
+			display: inline-block
+			color: $dark-grey
+			font-size: 16px
+			font-weight: 500
+			line-height: 80px
+			transition: .25s
+			&:hover
+				text-decoration: none
+				color: #fff
+				background-color: $green-main
+			&_active
+				background-color: $green-main
+				color: #fff
+			&_mobile
+				color: #0d1d3b
+				font-size: 14px
+				font-weight: 600
+				line-height: 50px
+				text-decoration: none
+				transition: .25s
+				&:nth-child(7, 8)
+					color: #4f4f4f
+					font-weight: 400
+					line-height: 50px
+				&:hover
+					text-decoration: none
+					color: $green-main
+		&_mobile
+			display: none
+			.shadow
+				box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3)

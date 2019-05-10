@@ -1,0 +1,58 @@
+.about
+	padding-top: 67px
+	padding-bottom: 62px
+	background-color: #fff	
+	&-tabs
+		padding: 0
+		margin: 0
+		border-bottom: 1px solid $light-grey-line
+		li
+			cursor: pointer
+			list-style-type: none
+			display: inline-block
+			width: 317px
+			text-align: center
+			border-bottom: 3px solid white
+			transition: .3s
+			&.active
+				border-bottom: 3px solid $green-main
+			a
+				display: inline-block
+				width: 100%
+				font-size: 16px
+				font-weight: 500
+				line-height: 71px
+				color: $dark-grey
+				text-decoration: none
+	&-block
+		color: $dark-grey	
+		&__text
+			width: 863px
+			margin-top: 32px
+			font-size: 15px
+			font-weight: 400
+			line-height: 20px
+			&:nth-child(3)
+				margin-top: 21px
+		h3
+			display: block
+			margin-top: 40px
+			font-size: 16px
+			font-weight: 700
+			line-height: 20px
+		&__table
+			margin-top: 15px
+			margin-bottom: 20px
+			width: 1280px
+		&__row
+			height: 50px
+			font-size: 15px
+			line-height: 35px
+			font-weight: 400
+			td:nth-child(1)
+				padding-left: 55px
+			td:nth-child(2)
+				text-align: right
+				padding-right: 53px
+			&:nth-child(2n)
+				background-color: #ebebeb

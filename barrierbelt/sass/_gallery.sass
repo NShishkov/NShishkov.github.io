@@ -1,0 +1,61 @@
+.gallery
+	background-color: #fff
+	padding-bottom: 75px
+	&-wrap
+		position: relative
+	&__title
+		margin-bottom: 14px
+	&-container
+		// margin: 0 -30px
+		&__img
+			padding: 0px 10px
+			// margin: 0 20px
+			margin-top: 14px
+
+
+// slick-slider
+.gallery-navs
+	&__prev, &__next
+		z-index: 3
+		top: 50%
+		margin-top: -30px
+		position: absolute
+		display: inline-block
+		width: 60px
+		height: 60px
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
+		border: 1px solid #e5e5e5
+	&__prev
+		background: url(../img/icons/arrow-left.png) no-repeat
+		background-position: center
+		left: -70px
+	&__next
+		background: url(../img/icons/arrow-right.png) no-repeat
+		background-position: center
+		right: -70px
+
+.slick
+	&-dots
+		display: block
+		margin-top: 25px !important
+		text-align: center
+		margin: 0
+		padding: 0
+		li
+			display: inline-block
+			margin: 0px 10px
+			list-style-type: none
+			button
+				padding: 2px
+				cursor: pointer
+				display: inline-block
+				border: 1px solid #999999
+				height: 10px
+				width: 10px
+				font-size: 1px
+				border-radius: 50%
+				background-color: #fff
+				text-indent: -9999px
+			&.slick-active
+				button
+					background-color: $green-main
