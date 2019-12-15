@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Decima Nova Pro';
+    src: url('DecimaNovaPro-Bold.eot');
+    src: url('DecimaNovaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DecimaNovaPro-Bold.woff2') format('woff2'),
+        url('DecimaNovaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
